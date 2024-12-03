@@ -1,10 +1,9 @@
 {
   "name": "my_telegram_bot",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "api/webhook.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
