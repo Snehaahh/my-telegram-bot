@@ -44,8 +44,6 @@ app.post("/", function(req, res) {
 		})
 })
 
-// Finally, start our server
-
     // Export the app for Vercel
 module.exports = app;
 
