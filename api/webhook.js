@@ -9,12 +9,10 @@ app.use(
     extended: true,
   })
 ); // For parsing application/x-www-form-urlencoded
-
 // This is the route the API will call
 app.post("/", function (req, res) {
   // Log the incoming request body to check the structure
   console.log("Incoming request body:", req.body);
-
   // Ensure the message is correctly extracted from the request body
   const message = req.body?.message;  // Using optional chaining to prevent errors if message is undefined
 
@@ -22,7 +20,6 @@ app.post("/", function (req, res) {
     // If no message or message doesn't contain "hey", do nothing
     return res.end();
   }
-
   // Respond with "heyyy!!" if "hey" is found in the message
   axios
     .post(
@@ -43,6 +40,5 @@ app.post("/", function (req, res) {
       res.end("Error: " + err);
     });
 });
-
 // Export the app for Vercel
 module.exports = app;
